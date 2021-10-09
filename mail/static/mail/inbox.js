@@ -136,27 +136,6 @@ async function load_mailbox(mailbox) {
         tr.setAttribute('data-email_id', email.id);
         tr.addEventListener('click', emailDetail.bind(email));
         document.querySelector('tbody').appendChild(tr);
-
-        // unarchive email button
-        const btn = document.createElement('button');
-        btn.classList.add('btn', 'btn-sm', 'btn-primary', 'float-left', 'mr-4');
-        btn.innerHTML =`<i class="fas fa-archive"></i>`;
-
-        // unarchive email event
-        btn.addEventListener('click', () => {
-          if (email.archived) {
-            // send a PUT request to set archived as false
-            fetch(`/emails/${email.id}`, {
-              method: 'PUT',
-              body: JSON.stringify({
-                archived: false
-              })
-            }).then(() => {
-              load_mailbox('inbox');
-            });
-          }
-        });
-        document.querySelector('td').appendChild(btn);
       });
     } else {
       // if there is no archived email
