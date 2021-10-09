@@ -4,5 +4,5 @@
 
 ## preview:
 - [https://www.youtube.com/watch?v=ZQJ6QfSQ2pA](https://www.youtube.com/watch?v=ZQJ6QfSQ2pA)
-[!["link"](https://i.ytimg.com/vi/ZQJ6QfSQ2pA/maxresdefault.jpg)](https://www.youtube.com/watch?v=ZQJ6QfSQ2pA)
+[!["link"](https://i.ytimg.com/vi/ZQJ6QfSQ2pA/hqdefault.jpg)](https://www.youtube.com/watch?v=ZQJ6QfSQ2pA)
 
